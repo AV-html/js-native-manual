@@ -4,5 +4,4 @@
 
 1. [Variables](./js/1.variables.md)
 
-
-1. [Output & input](./js/1.variables.md)
+2. [Output & input](./js/2-output-input.md)

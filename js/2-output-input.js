@@ -35,6 +35,12 @@ console.log(typeof book); // Объект - известная ошибка JS, 
 
 // console.log(userText);
 
+
+// Преобразование к типу number - функция Number()
+
+console.log("17" + 1);
+console.log(Number("17") + 1);
+
 // ! 1. Если хотим запросить символ/слово/текст
 // let userMessage = prompt('сообщение');
 

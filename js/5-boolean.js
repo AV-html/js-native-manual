@@ -1,4 +1,4 @@
-// * ===== boolean ===== * //
+// * ===== boolean (логический тип) ===== * //
 
 let hasСompare = 8 > 7; // true
 console.log(hasСompare);
@@ -83,7 +83,3 @@ console.log("0" == false);
 // * null & undefined
 // undefined    -> false
 // null         -> false
-
-
-
-

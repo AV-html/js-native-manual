@@ -1,11 +1,10 @@
-// * ===== number ===== * //
+// * ===== number (числовой тип) ===== * //
 let firstOperand = 12;
 let SecondOperand = 5;
 let mathOperation;
 let result;
 
 // Сложение +
-
 // Сложение и бинарный оператор '+'
 mathOperation = firstOperand + SecondOperand;
 console.log(firstOperand + " + " + SecondOperand + " = " + mathOperation);
@@ -72,7 +71,7 @@ let x = 1 + (a *= 2);
 console.log(x);
 
 
-// ! Внимание:
+// * Неявное преобразование
 console.log("Неявное преобразование: " + "6" / "2");
 
 
@@ -86,6 +85,3 @@ console.log("5" * "5");
 
 console.log("25" + 7 + 5);
 console.log("25" + (7 + 5));
-
-
-

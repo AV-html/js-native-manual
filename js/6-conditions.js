@@ -105,3 +105,26 @@ if (nullVariable === null) {
 if (isNaN(nanVariable)) {
     console.log("Переменная nanVariable - NaN");
 }
+
+
+// * Дополнительная часть * //
+// ? switch - case или
+// let answer_2 = prompt('Нулевые');
+// switch (answer_2) {
+//     case "1": // Работает, как ===
+//         console.log("1");
+//         break;
+//     case "2":
+//         console.log("2");
+//         break;
+//     case "3":
+//         console.log("3");
+//         break;
+//     default:
+//         console.log("Остальные");
+// }
+
+
+// * Тернарный оператор
+// let company = prompt('Какая компания создала JavaScript?');
+// (company == 'Netscape') ? console.log('Верно!') : console.log('Неправильно.');

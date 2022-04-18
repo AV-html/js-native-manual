@@ -12,6 +12,6 @@
 
 5. [Boolean](./js/5.boolean.md)
 
-6. [Conditions](./js/6-conditions.js)
+6. [Conditions](./js/6.conditions.md)
 
-6. [Cycle](./js/7-cycle.js)
+7. [Cycle](./js/7.cycle.md)

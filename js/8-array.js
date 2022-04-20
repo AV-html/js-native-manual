@@ -7,8 +7,9 @@
 // 5. boolean
 
 // * Ссылочный тип данных
-// 6. object -> [Array, Function, Object, NodeList]
-//              [Date, Map, Set, WeekMap, WeekSet ...]
+// 6. object -> [Array, Function, Object]
+//              [NodeList, HTMLCollection, Map, Set, Date, WeekMap, WeekSet]
+//              [Error, SyntaxError, ReferenceError, TypeError]
 
 // * Другие примитивы (редкие):
 // 7. bigint

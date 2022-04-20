@@ -19,3 +19,5 @@
 8. [Array](./js/8.array.md)
 
 9. [Function](./js/9.function.md)
+
+10. [Object](./js/10.object.md)

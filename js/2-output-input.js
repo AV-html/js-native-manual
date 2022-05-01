@@ -46,5 +46,4 @@ console.log(Number("17") + 1);
 // ! 1. Если хотим запросить символ/слово/текст
 // let userMessage = prompt('сообщение');
 
-// ! 2. Если хотим запросить цифру/число:
-// let userNumber = Number(prompt('сообщение'));
+

@@ -85,3 +85,10 @@ console.log("5" * "5");
 
 console.log("25" + 7 + 5);
 console.log("25" + (7 + 5));
+
+// * Явное преобразование
+// Number()
+
+// ! Если хотим запросить цифру/число:
+// let userNumber = Number(prompt('сообщение'));
+

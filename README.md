@@ -21,3 +21,5 @@
 9. [Function](./js/9.function.md)
 
 10. [Object](./js/10.object.md)
+
+11. [String-ext](./js/11.string-ext.md)

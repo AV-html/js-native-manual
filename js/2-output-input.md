@@ -104,10 +104,47 @@ console.log(a + b);
 `Вы ввели текст: <текст пользователя>, вы ввели число: <число пользователя>`
 
 
+### 11. Задача
+Не выполняя код, дать ответ, что выведется в консоль:
+Результат записать в комментарий.
+
+```
+console.log(typeof "text");
+console.log(typeof "1010");
+console.log(typeof false);
+console.log(typeof "Pavel");
+console.log(typeof "undefined");
+
+console.log(typeof -106.432);
+console.log(typeof "null");
+console.log(typeof 111);
+console.log(typeof true);
+console.log(typeof " ");
+```
+
+### 12. Задача
+Не выполняя код, дать ответ, что выведется в консоль:
+Результат записать в комментарий.
+
+```
+console.log(typeof Infinity);
+console.log(typeof 200);
+console.log(typeof "");
+console.log(typeof "true");
+console.log(typeof null);
+
+console.log(typeof "tester");
+console.log(typeof NaN);
+console.log(typeof false);
+console.log(typeof -Infinity);
+console.log(typeof undefined);
+```
+
+
 
 ## ★ Задачи повышенной сложности ★ ##
 
-### 11. ★ Задача ★ 
+### 13. ★ Задача ★ 
 Что выведется в консоли и почему:
 
 ```

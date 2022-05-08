@@ -1,3 +1,11 @@
+// * Явное преобразование
+// Number()
+
+// ! Если хотим запросить цифру/число:
+// let userNumber = Number(prompt('сообщение'));
+
+
+
 // * ===== number (числовой тип) ===== * //
 let firstOperand = 12;
 let SecondOperand = 5;
@@ -86,9 +94,4 @@ console.log("5" * "5");
 console.log("25" + 7 + 5);
 console.log("25" + (7 + 5));
 
-// * Явное преобразование
-// Number()
-
-// ! Если хотим запросить цифру/число:
-// let userNumber = Number(prompt('сообщение'));
 

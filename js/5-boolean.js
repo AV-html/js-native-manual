@@ -83,3 +83,22 @@ console.log("0" == false);
 // * null & undefined
 // undefined    -> false
 // null         -> false
+
+
+
+// * String
+// "" - пустая строка
+// "0" - строка с числом
+// " " - строка с одним пробелом
+// "t" - строка с текстом
+
+// * Number
+// NaN
+// 0
+// 1
+// 3
+// -3
+
+// * null & undefined
+// undefined
+// null

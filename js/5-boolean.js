@@ -41,9 +41,10 @@ console.log(hasСompare);
 // * Неявное преобразование типов
 console.log(10 + "10");
 console.log(10 - "10");
-console.log(isNaN(10 - "10")); // true
+console.log(isNaN(10 - "10")); // true 
 console.log(10 - "10" == NaN); // false
 // ! NaN == NaN // false -> Поэтому используем isNaN()
+// isNaN (Внутри преобразует в NaN)
 
 // ! Сравнение строк
 // console.log( 'Я' > 'А' ); // true

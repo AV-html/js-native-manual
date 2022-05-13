@@ -65,4 +65,3 @@ const text = "  stRing ";
 // * 11. <array>.reverse(); // Поменять местами элементы массива
 // split('').reverse().join('') // Поменять местами буквы
 
-

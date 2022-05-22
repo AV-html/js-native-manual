@@ -3,7 +3,10 @@
 let hasСompare = 8 > 7; // true
 console.log(hasСompare);
 
-// ? Операторы сравнения (приводят неявно к number)
+// ? Операторы сравнения (Возвращают логический тип данных)
+// * Если типы сравниваемых значений разные, то неявно к number
+// * Если типы одинаковые, то сравниваются значения
+
 // Больше               >
 // Больше или равно     >=
 // Меньше               <
@@ -13,13 +16,16 @@ console.log(hasСompare);
 // Не равно             !=  (с приведением типов)
 // Не равно             !== (без приведения типов)
 
-// ? Логические операторы (приводят неявно к boolean)
+// ? Логические операторы (Возвращают тот тип данных, с которым работал)
+
+//
 // ИЛИ                  ||
 // И                    && (Приоритет выше, чем у ||)
-// НЕ                   !
+// НЕ                   ! (Неявно приводит к типу boolean)
 
 // Идентичная запись, т.к. && - приоритетнее ||
 // a && b || c && d  ===  (a && b) || (c && d)
+
 
 // * Таблица истинности ||
 //  true  || true   =>  true
@@ -38,36 +44,34 @@ console.log(hasСompare);
 //  !false  =>  true
 
 
-// * Неявное преобразование типов
-console.log(10 + "10");
-console.log(10 - "10");
-console.log(isNaN(10 - "10")); // true 
-console.log(10 - "10" == NaN); // false
-// ! NaN == NaN // false -> Поэтому используем isNaN()
-// isNaN (Внутри преобразует в NaN)
 
-// ! Сравнение строк
-// console.log( 'Я' > 'А' ); // true
-// console.log( 'Коты' > 'Кода' ); // true
-// console.log( 'Сонный' > 'Сон' ); // true
+// * Преобразование к типу Number (Number(), >, <, >=, <=, ==, !=)
+// * String
+// ""           -> 0
+// " "          -> 0
+// "    "       -> 0
 
-// ! Сравнение разных типов
-// console.log('2' > 1); // true, строка '2' становится числом 2
-// console.log('03' == 3); // true, строка '03' становится числом 3
+// "0"          -> 0
+// "000"        -> 0
+// "007"        -> 7
+// "-7.5"       -> -7.5
 
-// ! Логическое значение true становится 1, а false – 0.
-// console.log(true == 1); // true, true == 3 => false
-// console.log(false == 0); // true,
+// "t"          -> NaN
+// "7px"        -> NaN
+// "!?/,."      -> NaN
 
-// ! При сравнении преобразуется к типу Number
-console.log("0" == false);
+// * Boolean 
+// true         -> 1
+// false        -> 0
 
-// console.log(null == undefined); // true
-// console.log(null === undefined); // false
+// * null & undefined
+// null         -> 0
+// undefined    -> NaN
 
-// * Преобразование к типу boolean
-// console.log(Boolean(3));
 
+
+
+// * Преобразование к типу boolean (Boolean(), ||, &&, !)
 // * String
 // ""           -> false (Пустая строка)
 // "0"          -> true
@@ -80,26 +84,41 @@ console.log("0" == false);
 // 1            -> true
 // 3            -> true
 // -3           -> true
+// Infinity     -> true
+// -Infinity    -> true
 
 // * null & undefined
-// undefined    -> false
 // null         -> false
+// undefined    -> false
 
 
+// * Примеры * //
+// * Неявное преобразование типов:
+console.log(10 + "10"); // '1010'
+console.log(10 - "10"); // 0
 
-// * String
-// "" - пустая строка
-// "0" - строка с числом
-// " " - строка с одним пробелом
-// "t" - строка с текстом
+// * Сравнение разных типов
+// console.log('2' > 1); // true, строка '2' становится числом 2
+// console.log('03' == 3); // true, строка '03' становится числом 3
 
-// * Number
-// NaN
-// 0
-// 1
-// 3
-// -3
+// * Логическое значение true становится 1, а false – 0.
+// console.log(true == 1); // true,
+// console.log(false == 0); // true,
+// console.log("0" == false); // true
 
-// * null & undefined
-// undefined
-// null
+// * Сравнение строк
+// console.log( 'Я' > 'А' ); // true
+// console.log( 'Коты' > 'Кода' ); // true
+// console.log( 'Сонный' > 'Сон' ); // true
+
+// * Исключения * //
+// console.log(null == undefined); // true
+// console.log(null === undefined); // false
+
+// ! NaN == NaN // false -> Поэтому используем isNaN()
+// isNaN (Внутри преобразует в NaN)
+// console.log(isNaN(10 - "10")); // false
+// console.log(isNaN(10 - "10px")); // true
+// console.log(isNaN("10px")); // true 
+
+

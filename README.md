@@ -25,3 +25,5 @@
 11. [String-ext](./js/11.string-ext.md)
 
 12. [Number-ext](./js/12.number-ext.md)
+
+13. [Function types](./js/13.function-types.md)

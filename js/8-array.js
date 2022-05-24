@@ -6,7 +6,7 @@
 // 4. string
 // 5. boolean
 
-// * Ссылочный тип данных
+// * Ссылочный тип данных [структура данных]
 // 6. object -> [Array, Function, Object]
 //              [NodeList, HTMLCollection, Map, Set, Date, WeekMap, WeekSet]
 //              [Error, SyntaxError, ReferenceError, TypeError]

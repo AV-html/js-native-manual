@@ -3,6 +3,10 @@
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array
 // https://learn.javascript.ru/array-methods
 
+// Вызов функции func()
+// Ссылка на функцию func
+// Callback, когда подаём на вход в функцию ссылку на функцию
+
 // ** Функции высшего порядка (high order function - hof) ** //
 
 // * 1. arr.forEach( (value, index, arr) => {} );

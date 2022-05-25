@@ -160,3 +160,15 @@ console.log(PI); // ?
 const PI = 3.1415;
 console.log(PI); // ?
 ```
+
+### 14. ★ Задача ★ 
+Не выполняя код, дать ответ, что выведется в консоль:
+Результат записать в комментарий.
+
+```
+console.log(typeof (typeof 10));
+console.log(typeof (typeof 'text'));
+console.log(typeof (typeof NaN));
+console.log(typeof (typeof Infinity));
+console.log(typeof (typeof null));
+```

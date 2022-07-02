@@ -1,5 +1,8 @@
 // * ===== Function (Функции) ===== * //
-// Function Decalration
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!! Tupeof
+
+// Function Declaration
 // Функция выводит в консоль переданный текст:
 function showMessage(param) {
     // body function

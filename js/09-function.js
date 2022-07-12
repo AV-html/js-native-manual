@@ -1,7 +1,5 @@
 // * ===== Function (Функции) ===== * //
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!! Tupeof
-
 // Function Declaration
 // Функция выводит в консоль переданный текст:
 function showMessage(param) {
@@ -16,7 +14,8 @@ showMessage("Test message!"); // Вызов функции
 showMessage("Test!"); // Повторный вызов функции с другим значением
 
 console.log(showMessage); // f { ... } - как правило никогда не выводим функцию
-console.log(typeof showMessage); // function
+console.log(typeof showMessage); // !!!! function !!!!
+
 
 
 let resultFunction = showMessage("Test repeat"); // По умолчанию функция возвращает undefined

@@ -93,9 +93,31 @@ console.log("5" * "5");
 
 console.log("25" + 7 + 5);
 console.log("25" + (7 + 5));
+console.log('10px' - '5px');
+console.log(10 * '5px');
+console.log('100 - 10' / 5);
 
-let testIndex = 1;
-console.log(testIndex++); // 1
-console.log(++testIndex); // 3
+
+// * Преобразование к типу Number
+
+console.log(Number('px'));
+console.log(Number('60px'));
+console.log(Number('1'));
+console.log(Number('0'));
+console.log(Number(''));
+console.log(Number(' '));
+console.log(Number('         '));
+console.log(Number('10'));
+
+// * Тип числа
+
+console.log(typeof NaN);
+console.log(typeof Infinity);
+console.log(typeof -Infinity);
+console.log(typeof 10);
+console.log(typeof -10);
+console.log(typeof 0);
+
+
 
 

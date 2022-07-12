@@ -34,3 +34,14 @@ let userName = 'Pavel';
 console.log("Моё имя -", userName); // Параметры через запятую
 console.log('Моё имя - ' + userName); // Конкатенация (склеивание)
 console.log(`Моё имя - ${userName}`); // Шаблонные литералы
+
+
+// * Тип строки
+
+console.log(typeof '');
+console.log(typeof ' ');
+console.log(typeof '1');
+console.log(typeof '0');
+console.log(typeof '5 * 4');
+console.log(typeof 't');
+console.log(typeof 'text');

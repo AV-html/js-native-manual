@@ -1,6 +1,7 @@
 # Native JavaScript (basic level) #
 
 ## Tasks
+[Self-test questions](./interview.md)
 
 1. [Variables](./js/01.variables.md)
 

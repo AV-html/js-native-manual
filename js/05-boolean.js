@@ -112,8 +112,11 @@ console.log(10 - "10"); // 0
 // console.log( 'Сонный' > 'Сон' ); // true
 
 // * Исключения * //
+// При применении оператора == к null или undefined преобразования в число не производится.
 // console.log(null == undefined); // true
 // console.log(null === undefined); // false
+// console.log(null == 0); // false
+
 
 // ! NaN == NaN // false -> Поэтому используем isNaN()
 // isNaN (Внутри преобразует в NaN)

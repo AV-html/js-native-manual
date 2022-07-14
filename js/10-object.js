@@ -1,50 +1,94 @@
-// * ===== object (объект) ===== * //
+// * ===== Object ===== * //
+
+const objTest = {}
+console.log(typeof objTest); // 'obejct'
+
+const arr = [
+    10,
+    4,
+    7,
+    3
+]
+console.log(arr);
 
 
-let objTest = {}; // Создание пустого массива, как пустая строка
-console.log(typeof objTest); // object
-
-// ! Если объект const, то свойства можно менять, но переприсвоить саму переменную нельзя
+// * === Create (создание)
 const user = {
+    // Поля (Свойства) состоит из
+    // key: value
     name: 'Bob',
-    age: 33
-    // ключ: значение - (поле или свойство)
-};
+    age: 33,
+    isMonster: false,
+    'test': 108,
+    'likes cat': true
+
+    // ключ имеет тип string, но когда мы создаём объект, мы можем не писать кавычки
+}
+
+console.log(user);
 
 // * Действия над объектами
-user.name = 'Gale'; // Изменить значение свойства (т.к. свойство name уже есть)
+// CRUD - Create Read Update Delete
 
-user.secondName = "London"; // Добавление нового свойства (т.к. свойство secondName нету)
+// * === Read (Прочитать значение)
+console.log(user.age); // 33 +
+console.log(user['age']); // 33
 
-delete user.secondName; // Удаление свойства
+console.log(user.test); // 108 +
+console.log(user['test']); // 108
 
-
-// * Добавление нового поля
-const newProp = 'isAdmin';
-
-// Добавить новое свойство с ключом newProp и значением true
-user.newProp = true; // .newProp - это не обращение к переменной newProp, это создание нового свойства
-
-// ! Если хотим взять значение из переменной, то необходимо использовать:
-
-// * Вычисляемое свойство объектов 
+// ? Вычисляемое свойство объекта
 // ! (https://learn.javascript.ru/es-object)
-user[newProp] = true; // Добавить новое свойство с ключом isAdmin и значением true
-user['test'] = 'tester'; // Добавить новое свойство с ключом test и значением 'tester'
-user['likes cat'] = true; // Добавить новое свойство с ключом likes cat и значением true
+const query = 'isMonster';
+console.log(user[query]); // false
 
-// user.likes cat = true; // error, можно обратиться только через скобки
+console.log(user['likes cat']);
+
+console.log(user.pupa); // undefined
 
 
-// * Перебор - for in
+// * === Update (мутирование)
+user.name = 'Gale'
+user['likes cat'] = false
 
-// а) Перебрать все ключи
-for (const key in user) {
-    console.log(user); // объект
-    console.log(key); // ключ
-    console.log(user[key]); // значение
-    console.log(user.key); // ! значение ключа key из объекта user
+// Если обращаемся к тому свйоству, которого нет и присваиваем значение, то мы создаём новое свойство
+
+// * === Create (созадние нового свойства)
+user.isAdmin = true
+user['likes catssss'] = true
+
+console.log(user);
+
+
+// * === delete (удаление)
+delete user['likes catssss']
+delete user.isAdmin
+
+console.log(user);
+
+
+// * === Как обратиться ко всем свойствам сразу? === * //
+
+// for, for-of - массивы (forEach)
+// for-in - для объектов
+
+
+for (const el of arr) {
+    console.log(arr); // array
+    console.log(el); // value
+    // ! Нету индекса, поэтому цикл только для чтения
 }
+
+for (const key in user) {
+    // console.log(user); // object
+    // console.log(key); // key
+    // console.log(user.key); // ! Обращаемся к свойству ключ, которого не существует
+    // console.log(user[key]); // value
+
+    console.log(`${key}: ${user[key]}`);
+    // В этому цикле можно мутировать и просто использовать для чтения
+}
+
 
 // * Проверить существует ли ключ (свойство)
 
@@ -54,7 +98,6 @@ for (const key in user) {
 console.log(user.hasOwnProperty('name')); // true
 console.log(user.hasOwnProperty('age')); // true
 console.log(user.hasOwnProperty('like bird')); // false
-
 
 
 // * Копирование объекта * //

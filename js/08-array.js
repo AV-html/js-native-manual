@@ -102,6 +102,15 @@ console.log(city); // ["Moscow", "Prontera", "Los Angeles"]
 // ! Заменяются оба массива. На самом деле заменяется один массив, он просто связан по ссылке
 
 
+
+const testArr1 = [1, 2, 3];
+const testArr2 = [1, 2, 3];
+console.log(testArr1 === testArr2); // false - объекты (массивы) не связаны по ссылке - значит объекты разные
+// ! Сравнение возвращает true, только если объекты связаны по ссылки
+const copyArr1 = testArr1;
+console.log(copyArr1 === testArr1); // true
+
+
 // * == Дополнительная информация == * //
 // * Массив может хранить переменные любого типа, пример:
 const variable = "data";
@@ -124,9 +133,3 @@ for (let i = 0; i < 30; i++) {
 }
 
 
-const testArr1 = [1, 2, 3];
-const testArr2 = [1, 2, 3];
-console.log(testArr1 === testArr2); // false - объекты (массивы) не связаны по ссылке - значит объекты разные
-// ! Сравнение возвращает true, только если объекты связаны по ссылки
-const copyArr1 = testArr1;
-console.log(copyArr1 === testArr1); // true

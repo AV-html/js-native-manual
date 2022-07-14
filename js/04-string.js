@@ -28,6 +28,15 @@ console.log(text.length); // 24 - символа в строке text
 let numStr = String(24); // преоразовать в тип String
 console.log(numStr); // '24'
 
+// String(123) // явное преобразование
+// 123 + ''    // неявное преобразование
+console.log(String(123));                   // '123'
+console.log(String(-12.3));                 // '-12.3'
+console.log(String(null));                  // 'null'
+console.log(String(undefined));             // 'undefined'
+console.log(String(true));                  // 'true'
+console.log(String(false));                 // 'false'
+
 
 let userName = 'Pavel';
 // * 3 способа вывести в консоль
@@ -45,3 +54,5 @@ console.log(typeof '0');
 console.log(typeof '5 * 4');
 console.log(typeof 't');
 console.log(typeof 'text');
+
+

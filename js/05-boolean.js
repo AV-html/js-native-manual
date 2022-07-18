@@ -4,8 +4,10 @@ let hasСompare = 8 > 7; // true
 console.log(hasСompare);
 
 // ? Операторы сравнения (Возвращают логический тип данных)
-// * Если типы сравниваемых значений разные, то неявно к number
-// * Если типы одинаковые, то сравниваются значения
+// * Если типы данных разные, то происходит неявное преобразование к типу Number
+// ! Искл: null & undefined не приводится к типу
+// ! Искл: null == undefined -> true
+// ! Искл: NaN == NaN -> false
 
 // Больше               >
 // Больше или равно     >=
@@ -16,16 +18,34 @@ console.log(hasСompare);
 // Не равно             !=  (с приведением типов)
 // Не равно             !== (без приведения типов)
 
-// ? Логические операторы (Возвращают тот тип данных, с которым работал)
+console.log(10 > 5);
+console.log(10 < 5);
+console.log(10 == 10);
+console.log(10 == '10'); // 'Неявное преобразование'
+console.log(10 === '10');
+console.log('10' == '10');
+console.log('7' > 3); // 'Неявное преобразование'
 
-//
+console.log(null == 0);
+console.log(null == undefined);
+console.log(undefined == NaN);
+console.log(NaN == NaN);
+
+console.log(true == 1); // 'Неявное преобразование'
+console.log(true == 11); // 'Неявное преобразование'
+console.log(true == '1'); // 'Неявное преобразование'
+console.log(true <= '1'); // 'Неявное преобразование'
+console.log(10 >= '10'); // 'Неявное преобразование'
+console.log('10px' == '10px');
+
+
+// ? Логические операторы (Возвращают тот тип данных, с которым работал)
+// Приоритет математических (+ конкатенация) выше над сравнением
+// Приоритет сранвения выше над логическими
+
 // ИЛИ                  ||
 // И                    && (Приоритет выше, чем у ||)
 // НЕ                   ! (Неявно приводит к типу boolean)
-
-// Идентичная запись, т.к. && - приоритетнее ||
-// a && b || c && d  ===  (a && b) || (c && d)
-
 
 // * Таблица истинности ||
 //  true  || true   =>  true
@@ -42,32 +62,6 @@ console.log(hasСompare);
 // * Таблица истинности !
 //  !true  =>  false
 //  !false  =>  true
-
-
-
-// * Преобразование к типу Number (Number(), >, <, >=, <=, ==, !=)
-// * String
-// ""           -> 0
-// " "          -> 0
-// "    "       -> 0
-
-// "0"          -> 0
-// "000"        -> 0
-// "007"        -> 7
-// "-7.5"       -> -7.5
-
-// "t"          -> NaN
-// "7px"        -> NaN
-// "!?/,."      -> NaN
-
-// * Boolean 
-// true         -> 1
-// false        -> 0
-
-// * null & undefined
-// null         -> 0
-// undefined    -> NaN
-
 
 
 
@@ -92,36 +86,38 @@ console.log(hasСompare);
 // undefined    -> false
 
 
-// * Примеры * //
-// * Неявное преобразование типов:
-console.log(10 + "10"); // '1010'
-console.log(10 - "10"); // 0
-
-// * Сравнение разных типов
-// console.log('2' > 1); // true, строка '2' становится числом 2
-// console.log('03' == 3); // true, строка '03' становится числом 3
-
-// * Логическое значение true становится 1, а false – 0.
-// console.log(true == 1); // true,
-// console.log(false == 0); // true,
-// console.log("0" == false); // true
+// ! NaN == NaN // false -> Поэтому используем функцию isNaN()
+// isNaN (Внутри преобразует в NaN)
+// console.log(isNaN(10 - "10")); // false
+// console.log(isNaN(10 - "10px")); // true
+// console.log(isNaN("10px")); // true
 
 // * Сравнение строк
 // console.log( 'Я' > 'А' ); // true
 // console.log( 'Коты' > 'Кода' ); // true
 // console.log( 'Сонный' > 'Сон' ); // true
 
-// * Исключения * //
-// При применении оператора == к null или undefined преобразования в число не производится.
-// console.log(null == undefined); // true
-// console.log(null === undefined); // false
-// console.log(null == 0); // false
 
 
-// ! NaN == NaN // false -> Поэтому используем isNaN()
-// isNaN (Внутри преобразует в NaN)
-// console.log(isNaN(10 - "10")); // false
-// console.log(isNaN(10 - "10px")); // true
-// console.log(isNaN("10px")); // true 
+// * (Напоминание) Преобразование к типу Number (Number(), >, <, >=, <=, ==, !=)
+// * String
+// ""           -> 0
+// " "          -> 0
+// "    "       -> 0
 
+// "0"          -> 0
+// "000"        -> 0
+// "007"        -> 7
+// "-7.5"       -> -7.5
 
+// "t"          -> NaN
+// "7px"        -> NaN
+// "!?/,."      -> NaN
+
+// * Boolean
+// true         -> 1
+// false        -> 0
+
+// * null & undefined
+// null         -> 0
+// undefined    -> NaN

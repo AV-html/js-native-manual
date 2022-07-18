@@ -108,6 +108,19 @@ console.log(Number(''));
 console.log(Number(' '));
 console.log(Number('         '));
 console.log(Number('10'));
+console.log(Number('+10'));
+console.log(Number('=10'));
+console.log(Number('-10'));
+console.log(Number('/10'));
+console.log(Number('*10'));
+console.log(Number('+ 10'));
+console.log(Number('1 0'));
+
+console.log(Number(true));
+console.log(Number(false));
+
+console.log(Number(null));
+console.log(Number(undefined));
 
 // * Тип числа
 

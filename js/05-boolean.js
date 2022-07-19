@@ -38,6 +38,21 @@ console.log(true <= '1'); // 'Неявное преобразование'
 console.log(10 >= '10'); // 'Неявное преобразование'
 console.log('10px' == '10px');
 
+// ! NaN == NaN // false -> Поэтому используем функцию isNaN()
+// isNaN (Внутри сам преобразует в Number, еслт подали не числовой тип)
+console.log(isNaN(10 - "10")); // false
+console.log(isNaN(10 - "10px")); // true
+console.log(isNaN("10px")); // true
+
+// * Сравнение строк
+console.log('a' == 'b');
+console.log('a' == 'a');
+console.log('a' > 'b'); // false 0041 > 0042
+console.log('b' > 'a'); // false 0042 > 0041
+console.log('Alex' > 'Abram'); // true
+console.log('a' > 'A'); // true (маленькие буквы расположены дальше заглавных в Unicode)
+console.log('aBram' > 'Alex'); // true
+console.log('aBram'.toLowerCase() > 'Alex'.toLowerCase()); // true
 
 // ? Логические операторы (Возвращают тот тип данных, с которым работал)
 // Приоритет математических (+ конкатенация) выше над сравнением
@@ -45,7 +60,7 @@ console.log('10px' == '10px');
 
 // ИЛИ                  ||
 // И                    && (Приоритет выше, чем у ||)
-// НЕ                   ! (Неявно приводит к типу boolean)
+// НЕ                   ! // !(Неявно приводит к типу boolean)
 
 // * Таблица истинности ||
 //  true  || true   =>  true
@@ -64,8 +79,7 @@ console.log('10px' == '10px');
 //  !false  =>  true
 
 
-
-// * Преобразование к типу boolean (Boolean(), ||, &&, !)
+// * === Преобразование к типу boolean (Boolean(), ||, &&, !)
 // * String
 // ""           -> false (Пустая строка)
 // "0"          -> true
@@ -84,40 +98,3 @@ console.log('10px' == '10px');
 // * null & undefined
 // null         -> false
 // undefined    -> false
-
-
-// ! NaN == NaN // false -> Поэтому используем функцию isNaN()
-// isNaN (Внутри преобразует в NaN)
-// console.log(isNaN(10 - "10")); // false
-// console.log(isNaN(10 - "10px")); // true
-// console.log(isNaN("10px")); // true
-
-// * Сравнение строк
-// console.log( 'Я' > 'А' ); // true
-// console.log( 'Коты' > 'Кода' ); // true
-// console.log( 'Сонный' > 'Сон' ); // true
-
-
-
-// * (Напоминание) Преобразование к типу Number (Number(), >, <, >=, <=, ==, !=)
-// * String
-// ""           -> 0
-// " "          -> 0
-// "    "       -> 0
-
-// "0"          -> 0
-// "000"        -> 0
-// "007"        -> 7
-// "-7.5"       -> -7.5
-
-// "t"          -> NaN
-// "7px"        -> NaN
-// "!?/,."      -> NaN
-
-// * Boolean
-// true         -> 1
-// false        -> 0
-
-// * null & undefined
-// null         -> 0
-// undefined    -> NaN

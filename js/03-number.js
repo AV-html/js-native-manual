@@ -104,6 +104,7 @@ console.log(Number('px'));
 console.log(Number('60px'));
 console.log(Number('1'));
 console.log(Number('0'));
+console.log(Number('000'));
 console.log(Number(''));
 console.log(Number(' '));
 console.log(Number('         '));
@@ -115,6 +116,9 @@ console.log(Number('/10'));
 console.log(Number('*10'));
 console.log(Number('+ 10'));
 console.log(Number('1 0'));
+console.log(Number('07'));
+console.log(Number('007'));
+
 
 console.log(Number(true));
 console.log(Number(false));

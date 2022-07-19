@@ -38,7 +38,7 @@ console.log(user.test); // 108 +
 console.log(user['test']); // 108
 
 // ? Вычисляемое свойство объекта
-// ! (https://learn.javascript.ru/es-object)
+// ! (https://learn.javascript.ru/es-object#vychislyaemye-svoystva)
 const query = 'isMonster';
 console.log(user[query]); // false
 

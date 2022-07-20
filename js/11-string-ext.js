@@ -1,8 +1,10 @@
 // * ===== string-extanded (строка-углубленный) ===== * //
 
 
-const stringList = 'Sample text!'
-// ! Строка - как массив, состоящий из символов
+const stringList = 'Simple text!'
+// ! Строка - как массив, состоящий из символов, но строка иммутабельная!
+// ! Замена символа невозможна!
+// stringList[0] = "T";
 
 // Получить символ:
 console.log(stringList[0]); // S
@@ -13,8 +15,7 @@ for (const symbol of stringList) {
     console.log(symbol);
 }
 
-// ! Замена символа невозможна!
-// stringList[0] = "T";
+
 
 
 // * === Функции (методы) строк * === //

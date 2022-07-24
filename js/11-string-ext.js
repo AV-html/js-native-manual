@@ -76,7 +76,7 @@ const text = "  stRing ";
 // Возвращает ссылку на этот же массив
 
 // ? Best Practice
-// split('').reverse().join('') // Поменять местами буквы в строке
+// 'snickers'.split('').reverse().join('') // Поменять местами буквы в строке
 
 
 

@@ -141,6 +141,20 @@ const testerObject = {
     isAdmin: false
 };
 
+// * Короткая запись объекта
+function sum(num1, num2) {
+    const sum = num1 + num2
+    return {
+        num1: num1,
+        num2,
+        sum
+    }
+}
+
+
+
+
+
 // * Функция может возвращать новый объект
 function createObj(obj) {
     const newObj = {}

@@ -1,0 +1,15 @@
+===== Рефакторинг =====
+
+1) if -> тернарный оператор (if-else)
+2) if -> логическое && (if без else)
+3) if -> return <boolean expression> (if else с return true/false)
+
+4) for -> for of (если arr[i] только для чтения)
+5) String(233) -> `${233}`
+6) Number('233') -> +'233'
+7) boolean('text') -> !!'text'
+
+8) obj = {
+    name, // name: name
+    age,
+}

@@ -99,3 +99,15 @@ console.log('aBram'.toLowerCase() > 'Alex'.toLowerCase()); // true
 // * null & undefined
 // null         -> false
 // undefined    -> false
+
+
+
+// Приоритеты:
+// ()
+// **
+// * / %
+// + -
+// > < >= === == !=
+// !
+// &&
+// ||

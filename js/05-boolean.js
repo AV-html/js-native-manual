@@ -8,6 +8,7 @@ console.log(hasСompare);
 // ! Искл: null & undefined не приводится к типу
 // ! Искл: null == undefined -> true
 // ! Искл: NaN == NaN -> false
+// ! Искл: null >= 0 -> true
 
 // Больше               >
 // Больше или равно     >=

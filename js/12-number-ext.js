@@ -39,3 +39,8 @@ console.log(randomInteger(1, 5));
 console.log(randomInteger(1, 5));
 console.log(randomInteger(1, 5));
 console.log(randomInteger(1, 5));
+
+
+// * Унарный опаретор
+// * Бинарный оператор
+// * Тернарный оператор

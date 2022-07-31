@@ -27,7 +27,7 @@
 // Возвращает найденный индекс или -1, если ничего не нашёл
 // ! lastIndexOf - аналогичная функция, только начинается -1 индекс (с конца)
 
-// 6. let hasIndex = <array>.includes(value, startIndex)); // Проверка на наличие значения, начиная с startIndex
+// 6. let hasValue = <array>.includes(value, startIndex)); // Проверка на наличие значения, начиная с startIndex
 // Возвращает true/false
 // Поддерживает отрицательные индексы
 

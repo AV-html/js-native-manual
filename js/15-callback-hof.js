@@ -56,10 +56,10 @@
 // }
 
 
-// * 6. arr.reduce( (prValue, value, index, array) => { return ... }, startValue );
+// * 6. arr.reduce( (prReturnValue, value, index, array) => { return ... }, startValue );
 // Вычисляет значение, на основе всего массива
-// arr.reduce - возвращает одно число
-// callback-функция возвращает значение и оно в следующей итерации записано в prValue
+// arr.reduce - возвращает одно значение
+// callback-функция возвращает значение и оно в следующей итерации записано в prReturnValue
 // В самую первую итерацию prValue = startValue (по умолчанию startValue = arr[0])
 
 // Пример 7:
@@ -72,6 +72,8 @@
 
 // * 7. arr.sort( (num1, num2) => { return ... } )
 // Функция мутирует массив и возвращает ссылку на тот же массив.
+// callback возвращает -value или +value (от знака зависит сортировка)
+
 // <array>.sort(); // Сортировка строки / массива по символам
 // <array>.sort((a, b) => a - b); // Сортировка чисел по значению
 

@@ -9,7 +9,7 @@ for (let i = 0; i < 10; i++) {
         continue;
     }
     if (i === 7) {
-        break
+        break;//
     }
     console.log("Итерация " + i);
     // Неявно i++

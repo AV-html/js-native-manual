@@ -49,7 +49,7 @@ console.log(isNaN("10px")); // true
 console.log('a' == 'b');
 console.log('a' == 'a');
 console.log('a' > 'b'); // false 0041 > 0042
-console.log('b' > 'a'); // false 0042 > 0041
+console.log('b' > 'a'); // true 0042 > 0041
 console.log('Alex' > 'Abram'); // true
 console.log('a' > 'A'); // true (маленькие буквы расположены дальше заглавных в Unicode)
 console.log('aBram' > 'Alex'); // true

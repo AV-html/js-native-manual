@@ -12,6 +12,7 @@
 // * 1. arr.forEach( (value, index, arr) => {} );
 // Простой перебор элементов
 // Метод arr.forEach ничего не возвращает
+// ! break  не работает
 
 // ? 2. arr.find( (value, index, arr) => { return ... } );
 // Поиск значениЯ по условию

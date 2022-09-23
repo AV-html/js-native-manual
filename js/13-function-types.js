@@ -1,6 +1,6 @@
 // * ===== Function types ===== * //
 
-// * Function Decalration
+// * Function Declaration
 console.log(sum1(3, 4)); // 7
 
 function sum1(a, b) {

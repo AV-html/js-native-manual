@@ -10,7 +10,7 @@
 // * Ссылочный тип данных [структура данных]
 // 6. object -> [Array, Function, Object]
 //              [NodeList, HTMLCollection, Map, Set, Date, WeekMap, WeekSet]
-//              [Error, SyntaxError, ReferenceError, TypeError]
+//              [Error, SyntaxError, ReferenceError, TypeError, Promise]
 
 // * Другие примитивы (редкие):
 // 7. bigint
@@ -55,7 +55,7 @@ const taskArray = [7, 12, 32, 44, 50];
 taskArray.push(7, 3, 1); // [7, 12, 32, 44, 50, 7, 3, 1]
 
 
-// 2. deleteItem = array.pop() - удаляет последний элемент, изменяя сам массив возвращает удалённый элемент
+// 2. deleteItem = array.pop() - удаляет ПОСЛЕДНИЙ элемент, изменяя сам массив возвращает удалённый элемент
 const deleteItem = taskArray.pop(); // [7, 12, 32, 44, 50, 7, 3]
 console.log(deleteItem); // 1
 

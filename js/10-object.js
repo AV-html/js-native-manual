@@ -100,6 +100,7 @@ console.log(user.hasOwnProperty('age')); // true
 console.log(user.hasOwnProperty('like bird')); // false
 
 
+
 // * Копирование объекта * //
 
 const man1 = {

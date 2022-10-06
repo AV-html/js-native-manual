@@ -14,7 +14,7 @@
 // Метод arr.forEach ничего не возвращает
 // ! break  не работает
 
-// ? 2. arr.find( (value, index, arr) => { return ... } );
+// ? 2. let value = arr.find( (value, index, arr) => { return ... } );
 // Поиск значениЯ по условию
 // Метод arr.find возвращает первое встречное value, на котором callback-функция вернула true
 // Если ничего не найдёт, то вернёт undefined

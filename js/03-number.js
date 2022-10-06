@@ -1,9 +1,10 @@
 // * Явное преобразование
-// Number()
+// * Number()
 
 // ! Если хотим запросить цифру/число:
 // let userNumber = Number(prompt('сообщение'));
 
+// NaN, Infinity / -Infinity
 
 
 // * ===== number (числовой тип) ===== * //

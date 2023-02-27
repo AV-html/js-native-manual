@@ -130,17 +130,17 @@ console.log(a + b);
 Результат записать в комментарий.
 
 ```
-console.log(typeof "text");
-console.log(typeof "1010");
-console.log(typeof false);
-console.log(typeof "Pavel");
-console.log(typeof "undefined");
+// console.log(typeof "text");
+// console.log(typeof "1010");
+// console.log(typeof false);
+// console.log(typeof "Pavel");
+// console.log(typeof "undefined");
 
-console.log(typeof -106.432);
-console.log(typeof "null");
-console.log(typeof 111);
-console.log(typeof true);
-console.log(typeof " ");
+// console.log(typeof -106.432);
+// console.log(typeof "null");
+// console.log(typeof 111);
+// console.log(typeof true);
+// console.log(typeof " ");
 ```
 
 ### 16. Задача
@@ -148,17 +148,17 @@ console.log(typeof " ");
 Результат записать в комментарий.
 
 ```
-console.log(typeof Infinity);
-console.log(typeof 200);
-console.log(typeof "");
-console.log(typeof "true");
-console.log(typeof null);
+// console.log(typeof Infinity);
+// console.log(typeof 200);
+// console.log(typeof "");
+// console.log(typeof "true");
+// console.log(typeof null);
 
-console.log(typeof "tester");
-console.log(typeof NaN);
-console.log(typeof false);
-console.log(typeof -Infinity);
-console.log(typeof undefined);
+// console.log(typeof "tester");
+// console.log(typeof NaN);
+// console.log(typeof false);
+// console.log(typeof -Infinity);
+// console.log(typeof undefined);
 ```
 
 ### 17. Задача 
@@ -171,17 +171,20 @@ console.log(typeof undefined);
 Что выведется в консоли и почему:
 
 ```
-console.log(numTest); // ?
-var numTest = 7;
-console.log(numTest); // ?
+// 1 случай
+// console.log(numberTest); // ? 
+// let numberTest = 12;
+// console.log(numberTest); // ?
 
-console.log(numberTest); // ?
-let numberTest = 12;
-console.log(numberTest); // ?
+// 2 случай
+// console.log(PI); // ?
+// const PI = 3.1415;
+// console.log(PI); // ?
 
-console.log(PI); // ?
-const PI = 3.1415;
-console.log(PI); // ?
+// 3 случай
+// console.log(numTest); // ? 
+// var numTest = 7;
+// console.log(numTest); // ?
 ```
 
 ### 19. ★ Задача ★ 
@@ -189,9 +192,9 @@ console.log(PI); // ?
 Результат записать в комментарий.
 
 ```
-console.log(typeof (typeof 10));
-console.log(typeof (typeof 'text'));
-console.log(typeof (typeof NaN));
-console.log(typeof (typeof Infinity));
-console.log(typeof (typeof null));
+// console.log(typeof (typeof 10));
+// console.log(typeof (typeof 'text'));
+// console.log(typeof (typeof NaN));
+// console.log(typeof (typeof Infinity));
+// console.log(typeof (typeof null));
 ```

@@ -2,11 +2,17 @@
 // console.log('name' in obj); // true
 // console.log('toString' in obj); // true - ищет в прототипе
 
-
-
 // Скопировать объект: Object.assign() - склекивает объекты
+// Object.keys()
+// Object.values()
+// Object.entries()
 
-// Неглубокое копирование
+// Как Создать методы в объекте?
+
+// Проверка свойства
+
+
+// * ===== Неглубокое копирование 
 console.log('Неглубокое копирование');
 const newCopyMan1 = Object.assign({}, man1);
 console.log(newCopyMan1 === man1); // false
@@ -71,4 +77,3 @@ console.log(newCopyObj.address.house === testObj.address.house);
 console.log(newCopyObj.address.house.arr === testObj.address.house.arr);
 
 console.log(newCopyObj);
-
